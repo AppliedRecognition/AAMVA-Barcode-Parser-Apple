@@ -11,9 +11,11 @@ import XCTest
 
 class AAMVA_Barcode_ParserTests: XCTestCase {
     
+    let parser = AAMVABarcodeParser()
+    
     func testBarcode1() {
         do {
-            let docData = try self.documentDataFromBase64EncodedResource("1", subdirectory: "barcode_data")
+            let docData = try self.documentDataFromResource("1")
             XCTAssertEqual(docData.firstName, "ROBERTO N")
             XCTAssertEqual(docData.lastName, "BRONSTON")
             outputEntriesInDocumentData(docData)
@@ -24,7 +26,7 @@ class AAMVA_Barcode_ParserTests: XCTestCase {
     
     func testBarcode2() {
         do {
-            let docData = try self.documentDataFromBase64EncodedResource("2", subdirectory: "barcode_data")
+            let docData = try self.documentDataFromResource("2")
             XCTAssertEqual(docData.firstName, "MICHAEL")
             XCTAssertEqual(docData.lastName, "SAMPLE")
             outputEntriesInDocumentData(docData)
@@ -35,7 +37,7 @@ class AAMVA_Barcode_ParserTests: XCTestCase {
     
     func testBarcode3() {
         do {
-            let docData = try self.documentDataFromBase64EncodedResource("3", subdirectory: "barcode_data")
+            let docData = try self.documentDataFromResource("3")
             XCTAssertEqual(docData.firstName, "STAN CONSTANTINE")
             XCTAssertEqual(docData.lastName, "OGRADY")
             outputEntriesInDocumentData(docData)
@@ -46,7 +48,7 @@ class AAMVA_Barcode_ParserTests: XCTestCase {
     
     func testBarcode4() {
         do {
-            let docData = try self.documentDataFromBase64EncodedResource("4", subdirectory: "barcode_data")
+            let docData = try self.documentDataFromResource("4")
             XCTAssertEqual(docData.firstName, "ABDULAH,M")
             XCTAssertEqual(docData.lastName, "ABBOTT")
             outputEntriesInDocumentData(docData)
@@ -59,15 +61,22 @@ class AAMVA_Barcode_ParserTests: XCTestCase {
         NSLog(documentData.entries.map({ $0.0+" = "+$0.1 }).joined(separator: "\n"))
     }
     
-    private func dataFromResource(_ resource: String, subdirectory: String) throws -> Data {
-        guard let url = Bundle(for: type(of: self)).url(forResource: resource, withExtension: "txt", subdirectory: subdirectory) else {
+    private func dataFromResource(_ resource: String) throws -> Data {
+        var resourceURL: URL?
+        for bundle in Bundle.allBundles {
+            guard let url = bundle.url(forResource: resource, withExtension: "txt") else {
+                continue
+            }
+            resourceURL = url
+        }
+        guard let url = resourceURL else {
             throw NSError(domain: self.errorDomain, code: 1, userInfo: [NSLocalizedDescriptionKey:"Test file not found"])
         }
         return try Data(contentsOf: url)
     }
 
-    private func documentDataFromBase64EncodedResource(_ resource: String, subdirectory: String) throws -> DocumentData {
-        let data = try self.dataFromResource(resource, subdirectory: subdirectory)
+    private func documentDataFromResource(_ resource: String) throws -> DocumentData {
+        let data = try self.dataFromResource(resource)
         let parser = AAMVABarcodeParser()
         return try parser.parseData(data)
     }
