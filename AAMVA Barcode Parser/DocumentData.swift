@@ -10,7 +10,7 @@ import Foundation
 
 /// Parsed document data
 /// - Since: 1.0.0
-@objc public class DocumentData: NSObject {
+@objc open class DocumentData: NSObject {
     
     /// `true` if the document contains no values
     /// - Since: 1.0.0
@@ -20,28 +20,44 @@ import Foundation
     
     /// First name of the document holder
     /// - Since: 1.0.0
-    @objc public var firstName: String?
+    @objc open var firstName: String? {
+        nil
+    }
     /// Last name of the document holder
     /// - Since: 1.0.0
-    @objc public var lastName: String?
+    @objc open var lastName: String? {
+        nil
+    }
     /// Address of the document holder
     /// - Since: 1.0.0
-    @objc public var address: String?
+    @objc open var address: String? {
+        nil
+    }
     /// Document holder's date of birth
     /// - Since: 1.0.0
-    @objc public var dateOfBirth: String?
+    @objc open var dateOfBirth: String? {
+        nil
+    }
     /// Document date of expiry
     /// - Since: 1.0.0
-    @objc public var dateOfExpiry: String?
+    @objc open var dateOfExpiry: String? {
+        nil
+    }
     /// Document date of issue
     /// - Since: 1.0.0
-    @objc public var dateOfIssue: String?
+    @objc open var dateOfIssue: String? {
+        nil
+    }
     /// Document number
     /// - Since: 1.0.0
-    @objc public var documentNumber: String?
+    @objc open var documentNumber: String? {
+        nil
+    }
     /// Document holder's sex
     /// - Since: 1.0.0
-    @objc public var sex: String?
+    @objc open var sex: String? {
+        nil
+    }
     /// Raw barcode data from which the document data was parsed
     /// - Since: 1.0.0
     @objc public var rawData: Data?
@@ -78,14 +94,14 @@ import Foundation
                 self.fields[id] = field
             }
         }
-        self.updateCommonFields()
     }
     
-    func setValue(_ value: DataField, forField id: String) {
+    /// Set value for entry
+    /// - Parameters:
+    ///   - value: Value
+    ///   - id: Entry identifier
+    /// - Since: 1.1.0
+    public func setValue(_ value: DataField, forEntryID id: String) {
         self.fields[id] = value
-        self.updateCommonFields()
-    }
-    
-    func updateCommonFields() {        
     }
 }

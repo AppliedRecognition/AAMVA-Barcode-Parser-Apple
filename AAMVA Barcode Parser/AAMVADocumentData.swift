@@ -10,6 +10,43 @@ import Foundation
 
 public class AAMVADocumentData: DocumentData {
     
+    public override var firstName: String? {
+        self["DAC"]
+    }
+    
+    public override var lastName: String? {
+        self["DCS"]
+    }
+    
+    public override var address: String? {
+        let cityAndState = [self["DAI"],self["DAJ"]].filter({ $0 != nil && !$0!.isEmpty }).compactMap({ $0 }).joined(separator: ", ")
+        let address = [self["DAG"],self["DAH"],cityAndState,self["DAK"]].filter({ $0 != nil && !$0!.isEmpty }).compactMap({ $0 }).joined(separator: "\n")
+        if !address.isEmpty {
+            return address
+        }
+        return nil
+    }
+    
+    public override var dateOfBirth: String? {
+        self["DBB"]
+    }
+    
+    public override var dateOfIssue: String? {
+        self["DBD"]
+    }
+    
+    public override var dateOfExpiry: String? {
+        self["DBA"]
+    }
+    
+    public override var documentNumber: String? {
+        self["DAQ"]
+    }
+    
+    public override var sex: String? {
+        self["DBC"]
+    }
+    
     let elements: [DataElement]
     
     lazy var elementIDs: [String] = {
@@ -23,18 +60,5 @@ public class AAMVADocumentData: DocumentData {
     init(elements: [DataElement]) {
         self.elements = elements
         super.init()
-        self.updateCommonFields()
-    }
-    
-    override func updateCommonFields() {
-        self.firstName = self["DAC"]
-        self.lastName = self["DCS"]
-        let cityAndState = [self["DAI"],self["DAJ"]].filter({ $0 != nil && !$0!.isEmpty }).compactMap({ $0 }).joined(separator: ", ")
-        self.address = [self["DAG"],self["DAH"],cityAndState,self["DAK"]].filter({ $0 != nil && !$0!.isEmpty }).compactMap({ $0 }).joined(separator: "\n")
-        self.dateOfBirth = self["DBB"]
-        self.dateOfIssue = self["DBD"]
-        self.dateOfExpiry = self["DBA"]
-        self.documentNumber = self["DAQ"]
-        self.sex = self["DBC"]
     }
 }

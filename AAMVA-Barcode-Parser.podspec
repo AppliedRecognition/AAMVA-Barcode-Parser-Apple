@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AAMVA-Barcode-Parser'
   s.module_name      = 'AAMVABarcodeParser'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'Parses barcodes on North American ID cards encoded in AAMVA standard.'
   s.homepage         = 'https://github.com/AppliedRecognition'
   s.license          = { :type => 'MIT', :file => 'LICENCE' }

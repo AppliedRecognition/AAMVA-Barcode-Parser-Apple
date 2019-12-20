@@ -136,57 +136,57 @@ import UIKit
             }
             switch key.lowercased() {
             case "processresult":
-                docData.setValue(DataField(description: "Process result", originalValue: val, parsedValue: val), forField: "processresult")
+                docData.setValue(DataField(description: "Process result", originalValue: val, parsedValue: val), forEntryID: "processresult")
                 result = Result(rawValue: val) ?? .documentProcessOK
             case "extendedresultcode":
                 extendedResultCode = ExtendedResultCode(rawValue: val) ?? .b
-                docData.setValue(DataField(description: "Extended result code", originalValue: val, parsedValue: val), forField: "extendedresultcode")
+                docData.setValue(DataField(description: "Extended result code", originalValue: val, parsedValue: val), forEntryID: "extendedresultcode")
             case "firstname":
-                docData.setValue(DataField(description: "First name", originalValue: val, parsedValue: val), forField: "firstname")
+                docData.setValue(DataField(description: "First name", originalValue: val, parsedValue: val), forEntryID: "firstname")
             case "middlename":
-                docData.setValue(DataField(description: "Middle name", originalValue: val, parsedValue: val), forField: "middlename")
+                docData.setValue(DataField(description: "Middle name", originalValue: val, parsedValue: val), forEntryID: "middlename")
             case "lastname":
-                docData.setValue(DataField(description: "Last name", originalValue: val, parsedValue: val), forField: "lastname")
+                docData.setValue(DataField(description: "Last name", originalValue: val, parsedValue: val), forEntryID: "lastname")
             case "address1":
-                docData.setValue(DataField(description: "Address 1", originalValue: val, parsedValue: val), forField: "address1")
+                docData.setValue(DataField(description: "Address 1", originalValue: val, parsedValue: val), forEntryID: "address1")
             case "address2":
-                docData.setValue(DataField(description: "Address 2", originalValue: val, parsedValue: val), forField: "address2")
+                docData.setValue(DataField(description: "Address 2", originalValue: val, parsedValue: val), forEntryID: "address2")
             case "city":
-                docData.setValue(DataField(description: "City", originalValue: val, parsedValue: val), forField: "city")
+                docData.setValue(DataField(description: "City", originalValue: val, parsedValue: val), forEntryID: "city")
             case "state":
-                docData.setValue(DataField(description: "State/province", originalValue: val, parsedValue: val), forField: "state")
+                docData.setValue(DataField(description: "State/province", originalValue: val, parsedValue: val), forEntryID: "state")
             case "postalcode":
-                docData.setValue(DataField(description: "Postal code", originalValue: val, parsedValue: val), forField: "postalcode")
+                docData.setValue(DataField(description: "Postal code", originalValue: val, parsedValue: val), forEntryID: "postalcode")
             case "dateofbirth":
-                docData.setValue(DataField(description: "Date of birth", originalValue: val, parsedValue: val), forField: "dateofbirth")
+                docData.setValue(DataField(description: "Date of birth", originalValue: val, parsedValue: val), forEntryID: "dateofbirth")
             case "heightcentimeters":
-                 docData.setValue(DataField(description: "Height cm", originalValue: val, parsedValue: val), forField: "heightcentimeters")
+                 docData.setValue(DataField(description: "Height cm", originalValue: val, parsedValue: val), forEntryID: "heightcentimeters")
             case "heightfeetinches":
-                docData.setValue(DataField(description: "Height ft/in", originalValue: val, parsedValue: val), forField: "heightfeetinches")
+                docData.setValue(DataField(description: "Height ft/in", originalValue: val, parsedValue: val), forEntryID: "heightfeetinches")
             case "weightkilograms":
-                docData.setValue(DataField(description: "Weight kg", originalValue: val, parsedValue: val), forField: "weightkilograms")
+                docData.setValue(DataField(description: "Weight kg", originalValue: val, parsedValue: val), forEntryID: "weightkilograms")
             case "weightpounds":
-                docData.setValue(DataField(description: "Weight lb", originalValue: val, parsedValue: val), forField: "weightpounds")
+                docData.setValue(DataField(description: "Weight lb", originalValue: val, parsedValue: val), forEntryID: "weightpounds")
             case "eyecolor":
-                docData.setValue(DataField(description: "Eye color", originalValue: val, parsedValue: val), forField: "eyecolor")
+                docData.setValue(DataField(description: "Eye color", originalValue: val, parsedValue: val), forEntryID: "eyecolor")
             case "haircolor":
-                docData.setValue(DataField(description: "Hair color", originalValue: val, parsedValue: val), forField: "haircolor")
+                docData.setValue(DataField(description: "Hair color", originalValue: val, parsedValue: val), forEntryID: "haircolor")
             case "gender":
-                docData.setValue(DataField(description: "Gender", originalValue: val, parsedValue: val), forField: "gender")
+                docData.setValue(DataField(description: "Gender", originalValue: val, parsedValue: val), forEntryID: "gender")
             case "dlidnumberformatted":
-                docData.setValue(DataField(description: "Document number formatted", originalValue: val, parsedValue: val), forField: "dlidnumberformatted")
+                docData.setValue(DataField(description: "Document number formatted", originalValue: val, parsedValue: val), forEntryID: "dlidnumberformatted")
             case "endorsements":
-                docData.setValue(DataField(description: "Endorsements", originalValue: val, parsedValue: val), forField: "endorsements")
+                docData.setValue(DataField(description: "Endorsements", originalValue: val, parsedValue: val), forEntryID: "endorsements")
             case "restrictions":
-                docData.setValue(DataField(description: "Restrictions", originalValue: val, parsedValue: val), forField: "restrictions")
+                docData.setValue(DataField(description: "Restrictions", originalValue: val, parsedValue: val), forEntryID: "restrictions")
             case "driverclass":
-                docData.setValue(DataField(description: "Driver class", originalValue: val, parsedValue: val), forField: "driverclass")
+                docData.setValue(DataField(description: "Driver class", originalValue: val, parsedValue: val), forEntryID: "driverclass")
             case "organdonor":
-                docData.setValue(DataField(description: "Organ donor", originalValue: val, parsedValue: val), forField: "organdonor")
+                docData.setValue(DataField(description: "Organ donor", originalValue: val, parsedValue: val), forEntryID: "organdonor")
             case "expirationdate":
-                docData.setValue(DataField(description: "Date of expiry", originalValue: val, parsedValue: val), forField: "expirationdate")
+                docData.setValue(DataField(description: "Date of expiry", originalValue: val, parsedValue: val), forEntryID: "expirationdate")
             case "issuedate":
-                docData.setValue(DataField(description: "Date of issue", originalValue: val, parsedValue: val), forField: "issuedate")
+                docData.setValue(DataField(description: "Date of issue", originalValue: val, parsedValue: val), forEntryID: "issuedate")
             default:
                 ()
             }

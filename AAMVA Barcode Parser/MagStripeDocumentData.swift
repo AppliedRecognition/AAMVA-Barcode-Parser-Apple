@@ -10,13 +10,31 @@ import Foundation
 
 @objc public class MagStripeDocumentData: DocumentData {
     
-    override func updateCommonFields() {
-        self.firstName = self["First name"]
-        self.lastName = self["Last name"]
-        self.address = self["Address"]
-        self.dateOfBirth = self["Date of birth"]
-        self.dateOfExpiry = self["Date of expiry"]
-        self.sex = self["Sex"]
-        self.documentNumber = self["DL/ID#"]
+    public override var firstName: String? {
+        self["First name"]
+    }
+    
+    public override var lastName: String? {
+        self["Last name"]
+    }
+    
+    public override var address: String? {
+        self["Address"]
+    }
+    
+    public override var dateOfBirth: String? {
+        self["Date of birth"]
+    }
+    
+    public override var dateOfExpiry: String? {
+        self["Date of expiry"]
+    }
+    
+    public override var sex: String? {
+        self["Sex"]
+    }
+    
+    public override var documentNumber: String? {
+        self["DL/ID#"]
     }
 }

@@ -10,6 +10,10 @@ import Foundation
 
 @objc public class AAMVAv1DocumentData: AAMVADocumentData {
     
+    public override var lastName: String? {
+        self["DAB"]
+    }
+    
     init() {
         super.init(elements: [
             SimpleDataElement(mandatory: true, cardType: .dl, id: "DAA", description: "Driver License Name", params: ElementParams("V150ANS")),
@@ -63,10 +67,5 @@ import Foundation
             SimpleDataElement(mandatory: false, cardType: .dl, id: "DBR", description: "Driver \"AKA\" Suffix", params: ElementParams("V5ANS")),
             SimpleDataElement(mandatory: false, cardType: .dl, id: "DBS", description: "Driver \"AKA\" Prefix", params: ElementParams("V5ANS")),
         ])
-    }
-    
-    override func updateCommonFields() {
-        super.updateCommonFields()
-        self.lastName = self["DAB"]        
     }
 }

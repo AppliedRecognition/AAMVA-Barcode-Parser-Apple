@@ -87,7 +87,7 @@ class AAMVASubfileParser {
         let elements = documentData.elements.filter({ $0.cardType.contains(cardType) })
         for element in elements {
             if let val = fields.removeValue(forKey: element.id) {
-                documentData.setValue(DataField(description: element.description, originalValue: val, parsedValue: element.formatValue(val)), forField: element.id)
+                documentData.setValue(DataField(description: element.description, originalValue: val, parsedValue: element.formatValue(val)), forEntryID: element.id)
                 if !element.isValidValue(val) {
                     NSLog("Invalid value for %@ (%@)", element.description, element.id)
                 }
