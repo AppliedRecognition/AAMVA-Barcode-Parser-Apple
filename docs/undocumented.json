@@ -1,0 +1,194 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVADocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVADocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv1DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv1DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv2DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv2DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv3DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv3DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv4DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv4DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv5DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv5DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv6DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv6DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv7DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv7DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/AAMVAv8DocumentData.swift",
+      "line": 11,
+      "symbol": "AAMVAv8DocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 14,
+      "symbol": "BarcodeParserError.aamvaVersionParsingError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 15,
+      "symbol": "BarcodeParserError.subfileParserCreationError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 16,
+      "symbol": "BarcodeParserError.numberOfEntriesParsingError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 17,
+      "symbol": "BarcodeParserError.offsetParsingError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 18,
+      "symbol": "BarcodeParserError.dataLengthParsingError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 19,
+      "symbol": "BarcodeParserError.emptyDocument",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 19,
+      "symbol": "BarcodeParserError.parseError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/BarcodeParserError.swift",
+      "line": 19,
+      "symbol": "BarcodeParserError.unsupportedBarcodeEncoding",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/DataField.swift",
+      "line": 11,
+      "symbol": "DataField",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckBarcodeParser.swift",
+      "line": 15,
+      "symbol": "IntellicheckBarcodeParser.Result",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckBarcodeParser.swift",
+      "line": 26,
+      "symbol": "IntellicheckBarcodeParser.ExtendedResultCode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckBarcodeParser.swift",
+      "line": 30,
+      "symbol": "IntellicheckBarcodeParser.IntellicheckDocumentError",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckBarcodeParser.swift",
+      "line": 204,
+      "symbol": "IntellicheckBarcodeParser.parser(_:didStartElement:namespaceURI:qualifiedName:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckBarcodeParser.swift",
+      "line": 208,
+      "symbol": "IntellicheckBarcodeParser.parser(_:didEndElement:namespaceURI:qualifiedName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckBarcodeParser.swift",
+      "line": 212,
+      "symbol": "IntellicheckBarcodeParser.parser(_:foundCharacters:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckDocumentData.swift",
+      "line": 11,
+      "symbol": "IntellicheckDocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/IntellicheckParserError.swift",
+      "line": 11,
+      "symbol": "IntellicheckParserError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser/AAMVA Barcode Parser/MagStripeDocumentData.swift",
+      "line": 11,
+      "symbol": "MagStripeDocumentData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jakub/Applied-Recognition/AAMVA Barcode Paser"
+}

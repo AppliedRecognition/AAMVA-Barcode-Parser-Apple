@@ -1,0 +1,14 @@
+clean: true
+sdk: iphonesimulator
+xcodebuild_arguments:
+ - -project
+ - "AAMVA Barcode Parser.xcodeproj"
+ - -scheme
+ - "AAMVA Barcode Parser"
+ - -sdk
+ - iphonesimulator
+author: Applied Recognition, Inc.
+module: AAMVABarcodeParser
+min_acl: public
+skip_undocumented: true
+hide_documentation_coverage: true

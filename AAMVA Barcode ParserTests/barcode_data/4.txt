@@ -1,0 +1,22 @@
+@
+ANSI 636012030001DL00000367DLDCAG   
+DCBX         
+DCDNONE 
+DBA20200901
+DCSABBOTT,                                 
+DCTABDULAH,M                                                                       
+DBD20150828
+DBB19600901
+DBC1
+DAYNONE
+DAU183 cm
+DAG5619 LAKEHILL CRES,                
+DAIBURLINGTON          
+DAJON
+DAKL7N 1B9    
+DAQG0463-64356-00901
+DCFDG7869391
+DCGCAN
+DCHNONE
+DCK*6667952*
+
