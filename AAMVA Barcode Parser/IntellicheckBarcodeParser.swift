@@ -61,19 +61,27 @@ import UIKit
         guard let deviceId = UIDevice.current.identifierForVendor?.uuidString else {
             throw IntellicheckParserError.undefinedDeviceId
         }
+        guard let bundleId = Bundle.main.bundleIdentifier else {
+            throw IntellicheckParserError.undefinedBundleIdentifier
+        }
+        let deviceName = UIDevice.current.name
         let base64Data = data.base64EncodedString()
-        guard let data = [
-                "device_os": "iOS",
-                "device_id": deviceId,
-                "data": base64Data
-            ].map({ $0+"="+$1 }).joined(separator: "&").data(using: .utf8) else {
+        var bodyComponents = URLComponents()
+        bodyComponents.queryItems = [
+            URLQueryItem(name: "device_os", value: "iOS"),
+            URLQueryItem(name: "device_id", value: deviceId),
+            URLQueryItem(name: "device_name", value: deviceName),
+            URLQueryItem(name: "password", value: self.apiKey),
+            URLQueryItem(name: "app_id", value: bundleId),
+            URLQueryItem(name: "data", value: base64Data)
+        ]
+        guard let data = bodyComponents.query?.data(using: .utf8) else {
             throw IntellicheckParserError.httpBodyError
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = data
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.addValue(self.apiKey, forHTTPHeaderField: "X-ApiKey")
         request.addValue(String(format: "%d", data.count), forHTTPHeaderField: "Content-Length")
         let session = URLSession(configuration: .ephemeral)
         let semaphore = DispatchSemaphore(value: 0)

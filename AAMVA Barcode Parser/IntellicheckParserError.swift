@@ -19,4 +19,5 @@ import Foundation
     case parsingError
     case timeout
     case unknownError
+    case undefinedBundleIdentifier
 }
