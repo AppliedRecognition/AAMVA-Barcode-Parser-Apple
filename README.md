@@ -34,4 +34,4 @@ func parseBarcodeData(_ barcodeData) -> DocumentData {
 }
 ```
 
-## [Reference documentation](https://appliedrecognition.github.io/AAMVA-Barcode-Parser-Apple)
+## [Reference documentation](https://appliedrecognition.github.io/AAMVA-Barcode-Parser-Apple/)
