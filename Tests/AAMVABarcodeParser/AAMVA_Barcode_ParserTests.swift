@@ -9,7 +9,7 @@
 import XCTest
 @testable import AAMVABarcodeParser
 
-class AAMVA_Barcode_ParserTests: XCTestCase {
+class AAMVA_Barcode_ParserTests: BaseTest {
     
     let parser = AAMVABarcodeParser()
     
@@ -60,26 +60,10 @@ class AAMVA_Barcode_ParserTests: XCTestCase {
     private func outputEntriesInDocumentData(_ documentData: DocumentData) {
         NSLog(documentData.entries.map({ $0.0+" = "+$0.1 }).joined(separator: "\n"))
     }
-    
-    private func dataFromResource(_ resource: String) throws -> Data {
-        var resourceURL: URL?
-        for bundle in Bundle.allBundles {
-            guard let url = bundle.url(forResource: resource, withExtension: "txt") else {
-                continue
-            }
-            resourceURL = url
-        }
-        guard let url = resourceURL else {
-            throw NSError(domain: self.errorDomain, code: 1, userInfo: [NSLocalizedDescriptionKey:"Test file not found"])
-        }
-        return try Data(contentsOf: url)
-    }
 
     private func documentDataFromResource(_ resource: String) throws -> DocumentData {
         let data = try self.dataFromResource(resource)
         let parser = AAMVABarcodeParser()
         return try parser.parseData(data)
     }
-    
-    private let errorDomain = "com.appliedrec.AAMVABarcodeParser"
 }
