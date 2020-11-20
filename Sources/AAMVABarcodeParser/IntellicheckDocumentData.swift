@@ -41,6 +41,8 @@ import Foundation
         self.resultCode = result
         self.extendedResultCode = xrc
         super.init()
+        self.fields["resultCode"] = DataField(description: "Result code", originalValue: result.rawValue, parsedValue: result.rawValue)
+        self.fields["extendedResultCode"] = DataField(description: "Extended result code", originalValue: xrc.rawValue, parsedValue: xrc.rawValue)
         if let firstName = try container.decodeIfPresent(String.self, forKey: .firstName), !firstName.isEmpty {
             self.fields["firstName"] = DataField(description: "First name", originalValue: firstName, parsedValue: firstName)
         }

@@ -110,11 +110,7 @@ import UIKit
             throw parserError!
         }
         if let doc = docData {
-            if doc.resultCode == .documentProcessOK {
-                return doc
-            } else {
-                throw IntellicheckDocumentError(result: doc.resultCode, extendedResultCode: doc.extendedResultCode)
-            }
+            return doc
         } else {
             preconditionFailure("Either parse error or document must be defined")
         }

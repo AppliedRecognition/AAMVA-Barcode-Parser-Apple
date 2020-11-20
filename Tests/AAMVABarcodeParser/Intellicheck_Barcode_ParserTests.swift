@@ -25,7 +25,8 @@ class Intellicheck_Barcode_ParserTests: BaseTest {
     }
     
     func testBarcode2() throws {
-        XCTAssertThrowsError(try self.documentDataFromResource("2"))
+        let docData = try self.documentDataFromResource("2")
+        XCTAssertEqual(docData.resultCode, .documentUnknown)
     }
     
     func testBarcode3() throws {
@@ -35,11 +36,12 @@ class Intellicheck_Barcode_ParserTests: BaseTest {
     }
     
     func testBarcode4() throws {
-        XCTAssertThrowsError(try self.documentDataFromResource("4"))
+        let docData = try self.documentDataFromResource("4")
+        XCTAssertEqual(docData.resultCode, .documentUnknown)
     }
     
-    private func documentDataFromResource(_ resource: String) throws -> DocumentData {
+    private func documentDataFromResource(_ resource: String) throws -> IntellicheckDocumentData {
         let data = try self.dataFromResource(resource)
-        return try self.parser.parseData(data)
+        return try self.parser.parseData(data) as! IntellicheckDocumentData
     }
 }
