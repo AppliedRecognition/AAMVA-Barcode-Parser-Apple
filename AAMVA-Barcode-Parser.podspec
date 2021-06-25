@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     "com.appliedrec.intellicheckURL" => "https://dev.ver-id.com/id-check/"
   }
   s.test_spec do |test|
-    test.source_files = 'Tests/AAMVABarcodeParser/*.swift'
-    test.resource = 'Tests/AAMVABarcodeParser/barcode_data/*.txt'
+    test.source_files = 'Sources/AAMVABarcodeParserTests/*.swift'
+    test.resource = 'Sources/AAMVABarcodeParserTests/barcode_data/*.txt'
   end
 end

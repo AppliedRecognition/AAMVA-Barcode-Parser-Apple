@@ -57,14 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B0207F7256540D600876E75 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
-		3B09E2D72564668600ED224D /* Intellicheck_Barcode_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intellicheck_Barcode_ParserTests.swift; sourceTree = "<group>"; };
+		3B0207F7256540D600876E75 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseTest.swift; path = ../../Sources/AAMVABarcodeParserTests/BaseTest.swift; sourceTree = "<group>"; };
+		3B09E2D72564668600ED224D /* Intellicheck_Barcode_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Intellicheck_Barcode_ParserTests.swift; path = ../../Sources/AAMVABarcodeParserTests/Intellicheck_Barcode_ParserTests.swift; sourceTree = "<group>"; };
 		3B3196EE23AC14D0009B8564 /* AAMVABarcodeParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAMVABarcodeParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3196F123AC14D0009B8564 /* AAMVA_Barcode_Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAMVA_Barcode_Parser.h; sourceTree = "<group>"; };
 		3B3196F223AC14D0009B8564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B3196F723AC14D0009B8564 /* AAMVABarcodeParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAMVABarcodeParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B3196FC23AC14D0009B8564 /* AAMVA_Barcode_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAMVA_Barcode_ParserTests.swift; sourceTree = "<group>"; };
-		3B3196FE23AC14D0009B8564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B3196FC23AC14D0009B8564 /* AAMVA_Barcode_ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AAMVA_Barcode_ParserTests.swift; path = ../../Sources/AAMVABarcodeParserTests/AAMVA_Barcode_ParserTests.swift; sourceTree = "<group>"; };
+		3B3196FE23AC14D0009B8564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Sources/AAMVABarcodeParserTests/Info.plist; sourceTree = "<group>"; };
 		3B31974423AD0C0F009B8564 /* IntellicheckBarcodeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntellicheckBarcodeParser.swift; sourceTree = "<group>"; };
 		3B31974923AD3CD3009B8564 /* AAMVAv4DocumentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAMVAv4DocumentData.swift; sourceTree = "<group>"; };
 		3B31974A23AD3CD3009B8564 /* AAMVAv1DocumentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAMVAv1DocumentData.swift; sourceTree = "<group>"; };
@@ -91,14 +91,15 @@
 		3B31975F23AD3CD3009B8564 /* SimpleDataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataElement.swift; sourceTree = "<group>"; };
 		3B31976023AD3CD3009B8564 /* HairColourDataElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairColourDataElement.swift; sourceTree = "<group>"; };
 		3B31976123AD3CD3009B8564 /* BarcodeParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeParsing.swift; sourceTree = "<group>"; };
+		3B6F7F9C268655D500271CC3 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		3BDCDC4D23AD476B00EA6123 /* BarcodeParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeParserError.swift; sourceTree = "<group>"; };
 		3BDCDC4F23AD4B0E00EA6123 /* IntellicheckParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntellicheckParserError.swift; sourceTree = "<group>"; };
 		3BDCDC5623AD5BE500EA6123 /* AAMVA-Barcode-Parser.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "AAMVA-Barcode-Parser.podspec"; sourceTree = "<group>"; };
 		3BDCDC5723AD5BE500EA6123 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3BDCDC5823AD5E4F00EA6123 /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1.txt; path = barcode_data/1.txt; sourceTree = "<group>"; };
-		3BDCDC5923AD5E4F00EA6123 /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2.txt; path = barcode_data/2.txt; sourceTree = "<group>"; };
-		3BDCDC5A23AD5E4F00EA6123 /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 3.txt; path = barcode_data/3.txt; sourceTree = "<group>"; };
-		3BDCDC5B23AD5E4F00EA6123 /* 4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 4.txt; path = barcode_data/4.txt; sourceTree = "<group>"; };
+		3BDCDC5823AD5E4F00EA6123 /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1.txt; path = ../../Sources/AAMVABarcodeParserTests/barcode_data/1.txt; sourceTree = "<group>"; };
+		3BDCDC5923AD5E4F00EA6123 /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2.txt; path = ../../Sources/AAMVABarcodeParserTests/barcode_data/2.txt; sourceTree = "<group>"; };
+		3BDCDC5A23AD5E4F00EA6123 /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 3.txt; path = ../../Sources/AAMVABarcodeParserTests/barcode_data/3.txt; sourceTree = "<group>"; };
+		3BDCDC5B23AD5E4F00EA6123 /* 4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 4.txt; path = ../../Sources/AAMVABarcodeParserTests/barcode_data/4.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		3B3196E423AC14D0009B8564 = {
 			isa = PBXGroup;
 			children = (
+				3B6F7F9C268655D500271CC3 /* Package.swift */,
 				3BDCDC5623AD5BE500EA6123 /* AAMVA-Barcode-Parser.podspec */,
 				3BDCDC5723AD5BE500EA6123 /* README.md */,
 				3B3196F023AC14D0009B8564 /* Sources */,
@@ -543,7 +545,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DPTJHF24M;
-				INFOPLIST_FILE = Tests/AAMVABarcodeParser/Info.plist;
+				INFOPLIST_FILE = Sources/AAMVABarcodeParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +564,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DPTJHF24M;
-				INFOPLIST_FILE = Tests/AAMVABarcodeParser/Info.plist;
+				INFOPLIST_FILE = Sources/AAMVABarcodeParserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
